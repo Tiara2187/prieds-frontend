@@ -17,6 +17,8 @@ import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { ContentAnimateDirective } from './shared/directives/content-animate.directive';
 import { TodoListComponent } from './apps/todo-list/todo-list.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,9 @@ import { TodoListComponent } from './apps/todo-list/todo-list.component';
     TodoListComponent,
     TodoComponent,
     SpinnerComponent,
-    ContentAnimateDirective
+    ContentAnimateDirective,
+ 
+
   ],
   imports: [
     BrowserModule,
@@ -36,7 +40,8 @@ import { TodoListComponent } from './apps/todo-list/todo-list.component';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    ChartsModule
+    ChartsModule,
+    
   ],
   providers: [ThemeService],
   bootstrap: [AppComponent]

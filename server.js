@@ -10,9 +10,9 @@ const express = require("express");
 const app = express();
 app.use(compression());
 app.use(requireHTTPS);
-app.use(express.static("./dist/Purple_angular_free"));
+app.use(express.static("./dist"));
 
 app.get("/*", function(req, res) {
-    res.sendFile("index.html", {root: "dist/Purple_angular_free/"});
+    res.sendFile("index.html", {root: "dist/"});
   });
   app.listen(process.env.PORT || 4200);

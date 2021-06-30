@@ -21,25 +21,25 @@ export class DashboardComponent implements OnInit {
   date: Date = new Date();
 
   visitSaleChartData = [{
-    label: 'CHN',
+    label: 'Children',
     data: [20, 40, 15, 35, 25, 50, 30, 20],
     borderWidth: 1,
     fill: false,
   },
   {
-    label: 'USA',
+    label: 'Adult',
     data: [40, 30, 20, 10, 50, 15, 35, 40],
     borderWidth: 1,
     fill: false,
   },
   {
-    label: 'UK',
+    label: 'Elderly',
     data: [70, 10, 30, 40, 25, 50, 15, 30],
     borderWidth: 1,
     fill: false,
   }];
 
-  visitSaleChartLabels = ["2013", "2014", "2014", "2015", "2016", "2017"];
+  visitSaleChartLabels = ["January", "February", "March", "April", "May", "June"];
 
   visitSaleChartOptions = {
     responsive: true,
@@ -139,7 +139,7 @@ export class DashboardComponent implements OnInit {
     }
   ];
 
-  trafficChartLabels = ["Search Engines", "Direct Click", "Bookmarks Click"];
+  trafficChartLabels = ["Search En", "Direct Click", "Bookmarks Click"];
 
   trafficChartOptions = {
     responsive: true,
